@@ -1,3 +1,5 @@
 #!/bin/sh
-yum install git
-yum install htop
+
+echo "开始安装....."
+yum install git -y
+yum install htop -y
