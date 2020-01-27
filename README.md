@@ -7,6 +7,8 @@
 
 运行指令: wget https://raw.githubusercontent.com/jasonBrom/DDOS-script/master/install.sh&&chmod 755 install.sh&&./install.sh
 
+安装过程中有一个地方要输入，无需输入回车即可。
+
 运行完成后 vi /var/www/html/api.php 将文件中的服务器IP用户名和密码,修改成当前服务器密码和用户名
 
 API调用方法:
